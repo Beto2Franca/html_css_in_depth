@@ -1,0 +1,32 @@
+.row{
+    display: flex;
+    align-items: stretch;
+
+}
+
+.label{
+    flex: 0 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row .dish{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasta{
+    background-color: rgb(193, 130, 5);
+}
+.pizza{
+    background-color: rgb(225, 222, 11);
+}
+.burrito{
+    background-color: rgb(64, 177, 7);
+}

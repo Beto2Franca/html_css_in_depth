@@ -1,0 +1,129 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+        img{
+            width: 250px;
+        }
+        header{
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+        nav{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        ul>a{ 
+           display: inline-block;
+           margin-right: 15px;
+           
+        }
+        a{
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: brown;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1{
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        fieldset{
+            padding: 10px;
+            margin-top: 7px;
+
+        }
+        button{
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+ </head>
+ <body>
+    <header>
+        <img src="/imagens/little_lemon.png" alt="logo_little_lemon">
+        <nav>
+            <ul>
+                <a href="#">
+                    <li>home</li>
+                </a>
+                <a href="#">
+                    <li>Location</li>
+                </a>
+                <a href="#">
+                    <li>Blog</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Book Table</h1>
+        <form action="" method="post">
+            <fieldset id="size">
+                <label>
+                    <input type="radio" value="2" name="size" id="size"> 2 - person Table
+                </label>
+
+                <label>
+                    <input type="radio" value="4" name="size" id="size" checked> 4 - person Table
+                </label>
+
+                <label>
+                    <input type="radio" value="6" name="size" id="size"> 6 -  Person table
+                </label>
+            </fieldset>
+
+            <fieldset id="location">
+    
+                <label>
+                    <input type="radio" value="indoors"  name="location" id="" checked> Indoors
+                </label>
+
+                <label>
+                    <input type="radio" value="outdoors"  name="location" id="" checked> Outdoors
+                </label>
+            </fieldset>
+
+            <div>
+                <button type="submit">Book Table</button>
+            </div>
+            
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Feito por <a href="#">Beto França</a></p>
+    </footer>
+ </body>
+ </html>

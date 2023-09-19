@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        nav {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul>a {
+            display: inline-block;
+            margin-right: 15px;
+
+        }
+
+        a {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: brown;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            text-align: center;
+            color: brown;
+        }
+
+        div {
+            margin: 10px;
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/imagens/little_lemon.png" alt="logo_little_lemon">
+        <nav>
+            <ul>
+                <a href="#">
+                    <li>home</li>
+                </a>
+                <a href="#">
+                    <li>Location</li>
+                </a>
+                <a href="#">
+                    <li>Blog</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Book a Table</h1>
+        <form action="cadastro.php" method="post">
+            <div>
+                <label for="booking_date">Booking Date</label>
+                <input type="date" name="booking_date" id="booking_date">
+            </div>
+            <div>
+                <label for="booking_people">Number of People</label>
+                <input type="range" name="booking_people" id="booking_people" min="1" max="10" value="4"
+                    oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+
+            </div>
+            <div>
+                <label for="booking_location">Location</label>
+                <input id="booking_location" name="booking_location" list="locations">
+                <datalist id="locations">
+                    <option value="Downtown"></option>
+                    <option value="Uptown"></option>
+                </datalist>
+            </div>
+            <div>
+                <button type="submit">Book Table</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Feito por <a href="#">Beto França</a></p>
+    </footer>
+</body>
+
+</html>
